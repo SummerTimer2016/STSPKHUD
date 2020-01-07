@@ -117,6 +117,15 @@ open class PKHUD: NSObject {
             container.frameView.effect = newValue
         }
     }
+    
+    open var containerBackViewColor:UIColor{
+        get {
+            return container.backgroundView.backgroundColor
+        }
+        set {
+            container.backgroundView.backgroundColor = newValue
+        }
+    }
 
     open var leadingMargin: CGFloat = 0
 
