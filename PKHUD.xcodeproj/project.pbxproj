@@ -26,7 +26,6 @@
 		2BA8656123C4130E008A5117 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8654F23C4130E008A5117 /* Window.swift */; };
 		2BA8656223C4130E008A5117 /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8655023C4130E008A5117 /* PKHUDAssets.swift */; };
 		2BA8656323C4130E008A5117 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8655123C4130E008A5117 /* WindowRootViewController.swift */; };
-		2BA8656523C41528008A5117 /* SSPKHUDLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8656423C41528008A5117 /* SSPKHUDLottieView.swift */; };
 		F935B1581B2B8088003C3734 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F935B1571B2B8088003C3734 /* Storyboard.storyboard */; };
 		F935B15A1B2B865A003C3734 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F935B1591B2B865A003C3734 /* Launch Screen.storyboard */; };
 		F996320219514FAC001F73CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996320119514FAC001F73CA /* AppDelegate.swift */; };
@@ -103,7 +102,6 @@
 		2BA8654F23C4130E008A5117 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Window.swift; path = STSPKHUD/Window.swift; sourceTree = SOURCE_ROOT; };
 		2BA8655023C4130E008A5117 /* PKHUDAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PKHUDAssets.swift; path = STSPKHUD/PKHUDAssets.swift; sourceTree = SOURCE_ROOT; };
 		2BA8655123C4130E008A5117 /* WindowRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindowRootViewController.swift; path = STSPKHUD/WindowRootViewController.swift; sourceTree = SOURCE_ROOT; };
-		2BA8656423C41528008A5117 /* SSPKHUDLottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPKHUDLottieView.swift; sourceTree = "<group>"; };
 		F935B1571B2B8088003C3734 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F935B1591B2B865A003C3734 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F99631FC19514FAC001F73CA /* PKHUD Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PKHUD Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,7 +194,6 @@
 		F996321F19514FD8001F73CA /* PKHUD */ = {
 			isa = PBXGroup;
 			children = (
-				2BA8656423C41528008A5117 /* SSPKHUDLottieView.swift */,
 				2BA8654C23C4130E008A5117 /* FrameView.swift */,
 				2BA8654723C4130D008A5117 /* Images.xcassets */,
 				2BA8653F23C4130D008A5117 /* Info.plist */,
@@ -322,7 +319,7 @@
 					};
 					F996321D19514FD8001F73CA = {
 						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -417,7 +414,6 @@
 				2BA8655D23C4130E008A5117 /* PKHUDRotatingImageView.swift in Sources */,
 				2BA8655323C4130E008A5117 /* PKHUDAnimating.swift in Sources */,
 				2BA8655A23C4130E008A5117 /* PKHUDSystemActivityIndicatorView.swift in Sources */,
-				2BA8656523C41528008A5117 /* SSPKHUDLottieView.swift in Sources */,
 				2BA8655B23C4130E008A5117 /* PKHUDProgressView.swift in Sources */,
 				2BA8655F23C4130E008A5117 /* PKHUDTextView.swift in Sources */,
 				2BA8655423C4130E008A5117 /* PKHUD.swift in Sources */,

@@ -183,16 +183,32 @@ open class PKHUD: NSObject {
     }
 
     func showContent() {
-        graceTimer?.invalidate()
-        container.showFrameView()
-        startAnimatingContentView()
+        
+        UIView.animate(withDuration: 0.8, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
+            self.container.frameView.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
+            self.graceTimer?.invalidate()
+            self.container.showFrameView()
+            self.startAnimatingContentView()
+            
+        }) {[weak self] (isFinised) in
+            self.container.frameView.transform = CGAffineTransform.identity
+        }
+        
+        
+       
     }
 
     open func hide(animated anim: Bool = true, completion: TimerAction? = nil) {
-        graceTimer?.invalidate()
-
-        container.hideFrameView(animated: anim, completion: completion)
-        stopAnimatingContentView()
+        
+        
+        UIView.animate(withDuration: 0.8, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
+            self.container.frameView.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
+            graceTimer?.invalidate()
+            container.hideFrameView(animated: anim, completion: completion)
+            stopAnimatingContentView()
+        }, completion: { (isFinished) in
+            self.container.frameView.transform = CGAffineTransform.identity
+        })
     }
 
     open func hide(_ animated: Bool, completion: TimerAction? = nil) {
