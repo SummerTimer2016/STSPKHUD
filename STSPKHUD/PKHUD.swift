@@ -118,7 +118,7 @@ open class PKHUD: NSObject {
         }
     }
     
-    open var containerBackViewColor:UIColor{
+    open var containerBackViewColor:UIColor?{
         get {
             return container.backgroundView.backgroundColor
         }
