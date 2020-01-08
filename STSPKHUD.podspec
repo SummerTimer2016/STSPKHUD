@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "STSPKHUD"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.52"
   spec.summary      = "A Swift 3 based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8 and up copy Philip Kluz"
 
   # This description is used to generate tags and improve search results.

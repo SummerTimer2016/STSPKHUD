@@ -190,7 +190,7 @@ open class PKHUD: NSObject {
             self.container.showFrameView()
             self.startAnimatingContentView()
             
-        }) {[weak self] (isFinised) in
+        }) {(isFinised) in
             self.container.frameView.transform = CGAffineTransform.identity
         }
         
