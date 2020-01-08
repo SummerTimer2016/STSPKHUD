@@ -14,12 +14,12 @@ open class PKHUDSuccessView: PKHUDSquareBaseView, PKHUDAnimating {
 
     var checkmarkShapeLayer: CAShapeLayer = {
         let checkmarkPath = UIBezierPath()
-        checkmarkPath.move(to: CGPoint(x: 4.0, y: 27.0))
-        checkmarkPath.addLine(to: CGPoint(x: 34.0, y: 56.0))
-        checkmarkPath.addLine(to: CGPoint(x: 88.0, y: 0.0))
+        checkmarkPath.move(to: CGPoint(x: 4.0, y: 17.0))
+        checkmarkPath.addLine(to: CGPoint(x: 24.0, y: 36.0))
+        checkmarkPath.addLine(to: CGPoint(x: 44.0, y: 0.0))
 
         let layer = CAShapeLayer()
-        layer.frame = CGRect(x: 3.0, y: 3.0, width: 88.0, height: 56.0)
+        layer.frame = CGRect(x: 3.0, y: 3.0, width: 44.0, height: 36.0)
         layer.path = checkmarkPath.cgPath
 
         #if swift(>=4.2)
