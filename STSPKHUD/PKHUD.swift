@@ -203,9 +203,9 @@ open class PKHUD: NSObject {
         
         UIView.animate(withDuration: 0.8, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.container.frameView.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
-            graceTimer?.invalidate()
-            container.hideFrameView(animated: anim, completion: completion)
-            stopAnimatingContentView()
+            self.graceTimer?.invalidate()
+            self.container.hideFrameView(animated: anim, completion: completion)
+            self.stopAnimatingContentView()
         }, completion: { (isFinished) in
             self.container.frameView.transform = CGAffineTransform.identity
         })
