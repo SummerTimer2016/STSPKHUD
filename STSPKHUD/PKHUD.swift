@@ -185,13 +185,10 @@ open class PKHUD: NSObject {
     func showContent() {
         
         UIView.animate(withDuration: 0.8, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
-            self.container.frameView.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
             self.graceTimer?.invalidate()
             self.container.showFrameView()
             self.startAnimatingContentView()
-            
         }) {(isFinised) in
-            self.container.frameView.transform = CGAffineTransform.identity
         }
         
         
